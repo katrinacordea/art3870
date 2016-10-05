@@ -1,0 +1,40 @@
+@media screen and (min-width:0px) and (max-width:640px) {
+  /* CSS code for small screens */
+}
+@media screen and (min-width:641px) {
+  /* CSS code for larger screens */
+}
+
+@import url(app.css);
+@import url(foundation.css);
+
+body {
+  color: #666666;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  color: #547ca0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div {
+  width: 50%;
+  margin: 0px auto 0px auto
+}
+
+.img-port {
+  height: 140px;
+  width: 140px;
+  -moz-border-radius: 70px;
+  border-radius: 70px;
+}
+
+#greeting{color:black;}

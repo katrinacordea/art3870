@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Greetings</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+  </head>
+
+  <body>
+
+<div>
+
+  <section class="row">
+
+    <h1 class="columns small-12 large-12">Katrina Cordea</h1>
+
+
+  </section>
+
+</div>
+
+<div>
+<img class="img-port" src="selfie.jpg" alt="selfie" class="columns small-12 large-12" align="center" />
+</div>
+
+<section>
+  Hello, <span id="greeting">hello!</span>
+</section>
+
+    <script language="JavaScript">
+    var myDate = new Date();
+    /* hour is before noon */
+    if ( myDate.getHours() < 12 )
+    {
+        document.getElementById('greeting').innerHTML = "Good Morning!";
+    }
+    else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+    if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
+    {
+        document.getElementById('greeting').innerHTML = "Good Afternoon!";
+    }
+    else  /* the hour is after 5pm, so it is between 6pm and midnight */
+    if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
+    {
+       document.getElementById('greeting').innerHTML = "Good Evening!";
+    }
+    else  /* the hour is not between 0 and 24, so something is wrong */
+    {
+        document.getElementById('greeting').innerHTML = "I'm not sure what time it is!";
+    }
+    </script>
+
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
