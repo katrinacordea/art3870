@@ -1,0 +1,14 @@
+
+
+
+
+var verb = prompt("a verb", "what do you like to do on saturdays");
+  
+var noun = prompt("a noun", "what is your favorite food?");
+
+var name = prompt("What is your name?", "First Name, please!");
+
+//document.write("Hello " + name + "! How have you been?");
+ 
+document.getElementById("output").innerHTML=name +" the evil elf of "+ verb +" will dominate " + noun;
+ 
